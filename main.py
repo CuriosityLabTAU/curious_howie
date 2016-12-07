@@ -10,7 +10,7 @@ print('-------')
 
 #l = kinect.skeleton_markers_reader.kinect_listener()
 os.system('kinect/skeleton_markers_reader.py')
-# basic system parameters
+# basic system parametersr
 sleep_time = 0.25
 round_duration = 5
 time_steps = int(float(round_duration) / sleep_time)
