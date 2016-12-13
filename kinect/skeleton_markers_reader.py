@@ -5,7 +5,7 @@ from std_msgs.msg import String
 
 
 def callback(data):
-    # get the data (name, position)
+    # get the data (name, position):  the data is the massage
     kid_pose = KinectPose()
     kid_pose.update_position(data.position)
     message = str(kid_pose.poses_satisfied)

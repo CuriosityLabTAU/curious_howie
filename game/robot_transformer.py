@@ -2,13 +2,13 @@ from game import *
 from nao_move import *
 import random
 
-class Simon:
+
+class RobotTransformer(object):
 
     def __init__(self):
         self.howie = NaoNode()
         self.child = ChildKinect()
-        self.pose_selected = None
-        self.hertzel_says = True
+        self.pose_received = None
 
     def robot_performs_action(self):
         # select the pose from the list of poses
@@ -32,4 +32,3 @@ class Simon:
                 pose_detected_names.append(self.howie.pose_names[i])
         print(self.pose_selected, 'The poses', pose_detected_names)
         return pose_detected_names
-
