@@ -47,6 +47,7 @@ class NaoNode:
 
         # Convert to radians
         pTargetAngles = [ x * almath.TO_RAD for x in pTargetAngles]
+        
 
         #------------------------------ send stiffness -----------------------------
         self.motionProxy.stiffnessInterpolation("Body", 1.0, 0.5)
@@ -55,7 +56,7 @@ class NaoNode:
         # We use the "Body" name to signify the collection of all joints
         pNames = "Body"
         # We set the fraction of max speed
-        pMaxSpeedFraction = 0.2
+        pMaxSpeedFraction = 0.15
         # Ask motion to do this with a blocking call
         self.motionProxy.angleInterpolationWithSpeed(pNames, pTargetAngles, pMaxSpeedFraction)
 

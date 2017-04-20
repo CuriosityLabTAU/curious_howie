@@ -11,7 +11,7 @@ class ChildKinect():
         print('Starting kinect')
         self.current_state = 'started'
 
-        rospy.init_node('kinect_listener', anonymous=True)
+        rospy.init_node('poses_listener', anonymous=True)
         rospy.Subscriber("kinect_poses", String, self.got_pose)
 
     def wait_for_start_pose(self):

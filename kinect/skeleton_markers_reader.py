@@ -10,9 +10,9 @@ def callback(data):
     kid_pose.update_position(data.position)
     message = str(kid_pose.poses_satisfied)
     pub = rospy.Publisher ('kinect_poses', String)
-    #rospy.init_node('kinect_poses_publisher')
-    rospy.loginfo (message)
-    pub.publish (message)
+    # rospy.init_node('kinect_poses_publisher')
+    rospy.loginfo(message)
+    pub.publish(message)
     print(message)
 
 def kinect_listener():

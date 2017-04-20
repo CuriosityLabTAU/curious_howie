@@ -23,3 +23,7 @@ open PyCharm from the terminal with the command:
     >>rostopic echo skeleton
 1. run python skeleton_markers_reader.py
 2. run main.py
+
+
+
+http://doc.aldebaran.com/1-14/ref/python-api.html
